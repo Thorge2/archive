@@ -8,13 +8,13 @@ export default function Navbar() {
           <div class="flex justify-evenly items-center w-full">
             <Link
               href="/"
-              class="inline-block bg-sky-200 text-sky-700 px-2 py-1 rounded-full shadow"
+              class="inline-block bg-sky-200 text-sky-700 hover:bg-sky-300 px-2 py-1 rounded-full shadow"
             >
               Home
             </Link>
             <Link
               href="/about"
-              class="inline-block bg-sky-200 text-sky-700 px-2 py-1 rounded-full shadow"
+              class="inline-block bg-sky-200 text-sky-700 hover:bg-sky-300 px-2 py-1 rounded-full shadow"
             >
               About
             </Link>
@@ -23,13 +23,13 @@ export default function Navbar() {
           <div class="flex justify-end items-center w-1/2">
             <Link
               href="/login"
-              class="inline-block bg-gray-400 text-gray-800 p-3 m-4 rounded-full shadow"
+              class="inline-block bg-gray-400 text-gray-800 hover:bg-gray-300 hover:text-gray-600 p-3 m-4 rounded-full shadow"
             >
               Login
             </Link>
             <Link
               href="/signup"
-              class="inline-block bg-pink-500 text-pink-100 p-3 m-4 rounded-full shadow"
+              class="inline-block bg-pink-500 text-pink-100 hover:bg-pink-400 hover:text-pink-900 p-3 m-4 rounded-full shadow"
             >
               Sign Up
             </Link>

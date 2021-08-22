@@ -2,7 +2,7 @@ import { Link } from "solid-app-router";
 
 export default function Home() {
   return (
-    <main class="md:flex pt-20 bg-gradient-to-tr from-gray-300 to-gray-100 h-screen">
+    <main class="md:flex pt-20 bg-gradient-to-tr from-gray-200 to-gray-50 h-screen">
       <div class="md:w-1/2 md:p-10 flex justify-center">
         <div class="w-1/2 lg:mt-24">
           <h1 class="font-bold md:text-6xl mb-5 text-4xl">Welcome!</h1>
@@ -14,7 +14,7 @@ export default function Home() {
           </p>
           <Link
             href="/about"
-            class="inline-block bg-pink-500 mt-5 p-3 rounded shadow"
+            class="inline-block bg-pink-500 hover:bg-pink-400 mt-5 p-3 rounded shadow"
           >
             Learn More
           </Link>

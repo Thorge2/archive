@@ -1,15 +1,17 @@
 version: "3"
 services:
   app:
-    container_name: archive-app
+    container_name: archive_app
     build: .
+    image: thorge02/archive_app
     ports:
       - "80:5000"
     restart: always
 
   server:
-    container_name: archive-server
+    container_name: archive_server
     build: ./server
+    image: thorge02/archive_server
     ports:
       - "5000:5000"
     external_links:
