@@ -1,0 +1,24 @@
+version: "3"
+services:
+  app:
+    container_name: archive-app
+    build: .
+    ports:
+      - "80:5000"
+    restart: always
+
+  server:
+    container_name: archive-server
+    build: ./server
+    ports:
+      - "5000:5000"
+    external_links:
+      - mongo
+    restart: always
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    restart: always
