@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:latest as build
 
 WORKDIR /usr/src/app
 
@@ -10,6 +10,7 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 5000
 
-CMD [ "npm", "run", "serve" ]
+FROM nginx:latest
+
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
